@@ -38,6 +38,44 @@
   .backlist-card { display: block; }
   .backlist-card .card-cover { transition: transform 0.25s; }
   .backlist-card:hover .card-cover { transform: translateY(-4px); }
+
+  /* Services responsiveness */
+  .services-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 88px 48px;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .services-grid-item {
+    background: #070708;
+    padding: 40px 32px;
+  }
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .services-container {
+      padding: 60px 24px;
+    }
+  }
+  @media (max-width: 600px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 480px) {
+    .services-grid-item {
+      padding: 30px 24px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -198,16 +236,16 @@
 
   <!-- ============ SERVICES ============ -->
   <div id="services" style="border-top:1px solid rgba(255,255,255,0.1); background:#070708;">
-    <div style="max-width:1180px; margin:0 auto; padding:88px 48px;">
+    <div class="services-container">
       <h2 style="font-family:Outfit,sans-serif; font-weight:800; font-size:48px; text-transform:uppercase; letter-spacing:-0.02em; margin:0 0 8px; text-align:center;">Services</h2>
       <p style="font-family:Outfit,sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#FE0CAC; text-align:center; margin:0 0 52px;">However you want to bring your book into the world</p>
-      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.1);">
-        <div style="background:#070708; padding:40px 32px;"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">01</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Publishing</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Full-service publishing for stories that matter &ndash; from manuscript to finished book on the shelf.</p></div>
-        <div style="background:#070708; padding:40px 32px;"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">02</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Consulting</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Guidance on the path, the market, and the publishing choices only you can make for your work.</p></div>
-        <div style="background:#070708; padding:40px 32px;"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">03</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Crowdfunding</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Campaign strategy that has funded and shipped books on Kickstarter and beyond.</p></div>
-        <div style="background:#070708; padding:40px 32px;"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">04</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Design &amp; Layout</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Cover design, typesetting, and interior layout handled with a craftsperson&rsquo;s eye.</p></div>
-        <div style="background:#070708; padding:40px 32px;"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">05</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Printing</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Print management and production for runs of any size, with formats to fit your story.</p></div>
-        <div style="background:#070708; padding:40px 32px;"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">06</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Distribution</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Getting your book into the hands and homes of the readers who need it most.</p></div>
+      <div class="services-grid">
+        <div class="services-grid-item"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">01</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Publishing</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Full-service publishing for stories that matter &ndash; from manuscript to finished book on the shelf.</p></div>
+        <div class="services-grid-item"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">02</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Consulting</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Guidance on the path, the market, and the publishing choices only you can make for your work.</p></div>
+        <div class="services-grid-item"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">03</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Crowdfunding</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Campaign strategy that has funded and shipped books on Kickstarter and beyond.</p></div>
+        <div class="services-grid-item"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">04</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Design &amp; Layout</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Cover design, typesetting, and interior layout handled with a craftsperson&rsquo;s eye.</p></div>
+        <div class="services-grid-item"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">05</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Printing</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Print management and production for runs of any size, with formats to fit your story.</p></div>
+        <div class="services-grid-item"><span style="font-family:Outfit;font-size:13px;font-weight:800;letter-spacing:0.1em;background:linear-gradient(120deg,#FC2858,#FE0CAC,#CD28F0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">06</span><div style="font-family:Outfit,sans-serif; font-weight:700; font-size:24px; text-transform:uppercase; margin:14px 0 10px;">Distribution</div><p style="font-family:'Hanken Grotesk',sans-serif; font-size:14.5px; line-height:1.6; color:#9a9aa2; margin:0;">Getting your book into the hands and homes of the readers who need it most.</p></div>
       </div>
     </div>
   </div>
